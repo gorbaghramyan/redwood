@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+}
+
+.nav {
+    width: 100%;
+}
+
+.navList {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    gap: 32px;
+}
+
+.navItem {
+    padding: 0 15px;
+}
+
+.navLink {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.logoImage {
+    cursor: pointer;
+}

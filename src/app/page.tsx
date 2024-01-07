@@ -1,8 +1,7 @@
 import Head from "next/head";
 import About from "./components/About";
-import Contact from "./components/Contact";
-import Hero from "./components/Hero";
-import Sustainability from "./components/Sustainability";
+import Contact from "./components/Contact/Contact";
+import Hero from "./components/Hero/Hero";
 
 export default function Home() {
     return (
@@ -13,15 +12,13 @@ export default function Home() {
                 </title>
                 <meta
                     name="description"
-                    content="Handcrafted redwood furniture by Greg Tocco, combining timeless craftsmanship with sustainability to elevate your home decor."
+                    content="Handcrafted redwood furniture in California, combining timeless craftsmanship with sustainability to elevate your home decor."
                 />
                 <link rel="icon" href="/favicon.ico" />
-                {/* Add other relevant meta tags */}
             </Head>
             <main>
                 <Hero />
                 <About />
-                <Sustainability />
                 <Contact />
             </main>
         </>

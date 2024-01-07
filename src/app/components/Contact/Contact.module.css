@@ -1,0 +1,102 @@
+.contactUs {
+  background-color: white;
+  padding: 2rem;
+  position: relative;
+  background-image: url('3.png'); /* Update with the actual path */
+  background-repeat: repeat-x;
+  /* background-repeat: repeat */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header {
+  text-align: center;
+  color: black;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.formCard {
+  min-width: 800px;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(5px);
+  /* Changing background to white for a cleaner look */
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  /* Adding a subtle border */
+}
+
+.inputField {
+  flex: 1; /* Allows fields to share the space */
+  margin-top: 1rem;
+}
+
+.submitButton {
+  display: block;
+  margin: 1rem auto 0;
+}
+
+.label {
+  display: block;
+  color: black;
+  /* Changing label text color to black */
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+  color: black;
+}
+
+.textarea {
+  height: 10rem;
+}
+
+.submitButton {
+  background-color: #f2f2f2;
+  /* Light grey background for a subtle design */
+  color: black;
+  /* Button text color */
+  text-transform: uppercase;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  border: none;
+  /* Removing border */
+  transition: background-color 0.3s;
+  /* Smooth transition for hover effect */
+}
+
+.submitButton:hover {
+  background-color: #e6e6e6;
+  /* Darker grey on hover for interaction feedback */
+}
+
+.contactFields {
+  display: flex;
+  gap: 1rem; /* Adds space between the fields */
+}
+
+@media (max-width: 768px) { /* Adjust this value based on your design needs */
+  .contactFields {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 850px) { /* Adjust this value based on your design needs */
+  .formCard {
+    min-width: 100%;
+  }
+}

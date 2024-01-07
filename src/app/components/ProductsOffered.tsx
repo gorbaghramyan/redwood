@@ -1,10 +1,13 @@
 "use client";
 import "@glidejs/glide/dist/css/glide.core.min.css";
+
 import { useEffect } from "react";
 import Glide from "@glidejs/glide";
 import Image from "next/image";
 import { SimpleLeftArrow, SimpleRightArrow } from "../utils/icons";
 import { products } from "../utils/consts";
+
+// import styles from "./ProductsOffered.module.css";
 
 const ProductsOffered = () => {
     useEffect(() => {

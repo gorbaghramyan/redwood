@@ -1,0 +1,83 @@
+.hero {
+  margin-top: 120px;
+  transform: rotateX(var(--move-x)) rotateY(var(--move-y));
+  transition: transform 1s;
+  background-color: black;
+}
+
+.layers {
+  perspective: 1500px;
+  overflow: hidden;
+}
+
+.layers__container {
+  height: 70vh;
+  min-height: 500px;
+  transform-style: preserve-3d;
+  transform: rotateX(var(--move-y)) rotateY(var(--move-x));
+  will-change: transform;
+  transition: transform var(--transition)
+}
+
+.layers__item {
+  position: absolute;
+  inset: -5vw;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroContent h1, .kamerik {
+  font-family: "kamerik-3d";
+}
+
+.heroContent h1 {
+  text-shadow: 1px 1px 2px black, 0 0 25px #662a19, 0 0 5px darkblue;
+  letter-spacing: calc(var(--index) * -.1);
+}
+
+.layer1 {
+  transform: translateZ(-55px) scale(1.06);
+}
+
+.layer3 {
+  transform: translateZ(180px) scale(.8);
+}
+
+.layer6 {
+  transform: translateZ(380px);
+  pointer-events: none;
+}
+
+.heroContent {
+  font-size: calc(var(--index) * 2.9);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: calc(var(--index) * .05);
+  line-height: 1.35em;
+  color: var(--text-light);
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.heroContent span {
+  display: block;
+}
+
+.heroContent__p {
+  text-transform: none;
+  font-family: merriweather-italic-3d;
+  letter-spacing: normal;
+  font-size: calc(var(--index) * 1.1);
+  line-height: 3;
+}
+
+.heroContent__p span {
+  display: block;
+  font-size: calc(var(--index) * 1.1);
+  line-height: 1.3;
+  text-shadow: 1px 1px 2px black, 0 0 25px #662a19, 0 0 5px darkblue;
+}

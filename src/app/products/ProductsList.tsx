@@ -34,9 +34,6 @@ export default function ProductsList() {
                                 <span className="text-xl text-gray-600">
                                     {product.price}
                                 </span>
-                                <button className="px-3 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded hover:bg-gray-700 transition duration-300">
-                                    Add to Cart
-                                </button>
                             </div>
                         </div>
                     </div>
