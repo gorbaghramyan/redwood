@@ -17,6 +17,11 @@
     padding: 0 15px;
 }
 
+.textContainer {
+    font-size: 18px;
+    width: 50%;
+}
+
 @media screen and (max-width: 1276px) {
     .redwood_beauty img {
         max-width: 300px;
@@ -34,5 +39,9 @@
         max-width: 100%;
         max-height: 100%;
         margin: auto;
+    }
+
+    .textContainer {
+        width: 95%;
     }
 }

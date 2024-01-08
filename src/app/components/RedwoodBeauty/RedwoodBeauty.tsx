@@ -5,7 +5,7 @@ import styles from "./RedwoodBeauty.module.css";
 export default function RedwoodBeauty() {
     return (
         <div className={styles.redwood_beauty}>
-            <div className="text-lg">
+            <div className={styles.textContainer}>
                 <h2 className="text-3xl font-semibold text-center">
                     The Essence of Redwood: Elegance Meets Endurance
                 </h2>
