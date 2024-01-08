@@ -1,7 +1,12 @@
 import Head from "next/head";
-import About from "./components/About";
+import Intro from "./components/Intro";
 import Contact from "./components/Contact/Contact";
 import Hero from "./components/Hero/Hero";
+import CraftsmanshipIntro from "./components/CraftsmanshipIntro";
+import ProductCarousel from "./components/ProductCarousel/ProductCarousel";
+import WhyChoose from "./components/WhyChoose/WhyChoose";
+import ViewCollection from "./components/ViewCollection";
+import RedwoodBeauty from "./components/RedwoodBeauty/RedwoodBeauty";
 
 export default function Home() {
     return (
@@ -18,7 +23,19 @@ export default function Home() {
             </Head>
             <main>
                 <Hero />
-                <About />
+                
+                <Intro />
+
+                <ProductCarousel />
+
+                <WhyChoose />
+
+                <ViewCollection />
+
+                <RedwoodBeauty />
+
+                <CraftsmanshipIntro />
+
                 <Contact />
             </main>
         </>

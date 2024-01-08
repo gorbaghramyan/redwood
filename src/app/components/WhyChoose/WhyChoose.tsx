@@ -1,17 +1,18 @@
 import Image from "next/image";
+import styles from "./WhyChoose.module.css";
 
-import why_choose_redwood from "../img/why_choose_redwood.png";
+import why_choose_redwood from "../../img/why_choose_redwood.png";
 
 export default function WhyChoose() {
     return (
-        <div className="why_choose">
+        <div className={styles.why_choose}>
             <Image
                 src={why_choose_redwood.src}
                 alt="Table"
                 width={350}
                 height={350}
             />
-            <div className="why_choose_wrap">
+            <div className={styles.why_choose_wrap}>
                 <h2 className="text-xl font-semibold">
                     Why Choose Redwood Furniture?
                 </h2>

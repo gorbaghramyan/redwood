@@ -1,4 +1,4 @@
-import p1 from "../img/carousel/1.png";
+import p1 from "@/app/img/carousel/1.png";
 import p2 from "@/app/img/carousel/2.png";
 import p3 from "@/app/img/carousel/3.png";
 import p4 from "@/app/img/carousel/4.png";
@@ -7,12 +7,12 @@ import p6 from "@/app/img/carousel/6.png";
 import p7 from "@/app/img/carousel/7.png";
 import p8 from "@/app/img/carousel/8.png";
 
-import craft_img_1 from "../img/crafting/1.jpg";
-import craft_img_2 from "../img/crafting/2.jpg";
-import craft_img_3 from "../img/crafting/3.jpg";
-import craft_img_4 from "../img/crafting/4.jpg";
-import craft_img_5 from "../img/crafting/5.jpg";
-import craft_img_6 from "../img/crafting/6.jpg";
+import craft_img_1 from "@/app/img/crafting/1.jpg";
+import craft_img_2 from "@/app/img/crafting/2.jpg";
+import craft_img_3 from "@/app/img/crafting/3.jpg";
+import craft_img_4 from "@/app/img/crafting/4.jpg";
+import craft_img_5 from "@/app/img/crafting/5.jpg";
+import craft_img_6 from "@/app/img/crafting/6.jpg";
 
 export const products = [
     {

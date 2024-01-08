@@ -1,9 +1,9 @@
-import Blockquote from "../components/Blockquote/Blockquote";
-import Craftsmanship from "../components/Craftsmanship";
+import Blockquote from "./Blockquote/Blockquote";
+import Craftsmanship from "./Craftsmanship";
 
-export default function About() {
+export default function CraftsmanshipIntro() {
     return (
-        <section id="craftsmanship" className="my-[150px]">
+        <section>
             <div className="text-center">
                 <h2 className="text-4xl font-bold text-red-700">
                     Craftsmanship Journey
@@ -13,15 +13,13 @@ export default function About() {
                 </p>
             </div>
 
-            <p className="text-lg w-3/4 mx-auto my-[10px] text-center">
+            <p className="text-lg w-2/3 mx-auto my-[10px] text-center mt-6">
                 We ensure that every piece of furniture is crafted with respect
                 for the environment, using sustainably sourced redwood and
                 eco-friendly practices.
             </p>
 
-            <Blockquote />
-
-            <Craftsmanship allStory />
+            <Craftsmanship />
         </section>
     );
 }

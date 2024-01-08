@@ -3,7 +3,7 @@
 import styles from './ProductPage.module.css';
 import Image from "next/image";
 import { useState } from "react";
-import { products } from "@/app/utils/consts";
+import { products } from "@/utils/consts";
 
 export default function ProductPage({ params }: { params: { id: string } }) {
     const [width, setWidth] = useState(1);

@@ -1,0 +1,38 @@
+.redwood_beauty {
+    display: flex;
+    padding: 40px;
+    gap: 4rem;
+}
+
+.redwood_beauty img {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.redwood_beauty>div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: auto;
+    padding: 0 15px;
+}
+
+@media screen and (max-width: 1276px) {
+    .redwood_beauty img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .redwood_beauty {
+        flex-direction: column;
+    }
+
+    .redwood_beauty img {
+        max-width: 100%;
+        max-height: 100%;
+        margin: auto;
+    }
+}

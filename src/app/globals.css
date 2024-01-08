@@ -41,11 +41,6 @@ h2 {
   color: var(--primary-color)
 }
 
-.sustainability {
-  padding: 40px;
-  text-align: center
-}
-
 
 
 footer {
@@ -73,93 +68,16 @@ footer a:hover {
   color: var(--text-light)
 }
 
-.why_choose {
-  padding: 40px;
-  display: flex;
-  flex-direction: row;
-  /* Align items side by side */
-  align-items: center;
-  /* Center items vertically */
-  justify-content: center;
-  /* Center items horizontally */
-  gap: 4rem;
+
+
+.cta {
+  background-image: url('./img/banner_bg.png');
+  background-size: cover;
+  background-repeat: repeat;
 }
 
-.why_choose_wrap {
-  display: flex;
-  flex-direction: column;
-  /* Align items side by side */
-  align-items: center;
-  /* Center items vertically */
-  justify-content: center;
-  /* Center items horizontally */
-  gap: 1rem;
-}
-
-.why_choose ul {
-  list-style: disc inside;
-  /* Default disc style bullets inside the list */
-  padding-left: 0;
-  /* Remove default padding */
-}
-
-.why_choose ul li {
-  list-style: none;
-}
-
-.why_choose ul li::before {
-  content: "\2022";
-  color: red;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
-
-@media screen and (max-width: 767px) {
-  .why_choose {
-    flex-direction: column;
-  }
-
-}
-
-.redwood_beauty {
-  display: flex;
-  padding: 40px;
-  gap: 4rem;
-}
-
-.redwood_beauty img {
-  max-width: 500px;
-  max-height: 500px;
-}
-
-.redwood_beauty>div {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  margin: auto;
-  padding: 0 15px;
-}
-
-@media screen and (max-width: 1276px) {
-  .redwood_beauty img {
-    max-width: 300px;
-    max-height: 300px;
-  }
-
-}
-
-@media screen and (max-width: 800px) {
-  .redwood_beauty {
-    flex-direction: column;
-  }
-
-  .redwood_beauty img {
-    max-width: 100%;
-    max-height: 100%;
-    margin: auto;
-  }
+.cta button {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 .glide__slides li, .glide__slides .slide_img {
@@ -182,14 +100,4 @@ footer a:hover {
   background-color: #f2f2f2;
   /* Slightly change color for feedback */
   transition: all .15s ease-in-out;
-}
-
-.cta {
-  background-image: url('./img/banner_bg.png');
-  background-size: cover;
-  background-repeat: repeat;
-}
-
-.cta button {
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }

@@ -3,7 +3,7 @@ import styles from './Hero.module.css';
 import Image from "next/image";
 import hero_back from "../../img/layer-1.webp";
 import layer6 from "../../img/layer-6.png";
-import useParallaxEffect from '@/app/hooks/useParallaxEffect';
+import useParallaxEffect from '@/hooks/useParallaxEffect';
 
 export default function Hero() {
     useParallaxEffect();

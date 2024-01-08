@@ -4,12 +4,12 @@ import "@glidejs/glide/dist/css/glide.core.min.css";
 import { useEffect } from "react";
 import Glide from "@glidejs/glide";
 import Image from "next/image";
-import { SimpleLeftArrow, SimpleRightArrow } from "../utils/icons";
-import { products } from "../utils/consts";
+import { SimpleLeftArrow, SimpleRightArrow } from "../../../utils/icons";
+import { products } from "../../../utils/consts";
 
 // import styles from "./ProductsOffered.module.css";
 
-const ProductsOffered = () => {
+const ProductCarousel = () => {
     useEffect(() => {
         new Glide(".glide", {
             type: "carousel",
@@ -24,7 +24,8 @@ const ProductsOffered = () => {
     }, []);
 
     return (
-        <div className="glide xl:w-[54rem] m-3 lg:w-[42rem] md:w-[30rem] sm:w-[18rem] px-16 py-8 bg-gray-300 bg-opacity-60 rounded-3xl">
+        <div className="px-10">
+            <div className="glide xl:w-[54rem] m-3 lg:w-[42rem] md:w-[30rem] sm:w-[18rem] px-16 py-8 bg-gray-300 bg-opacity-60 rounded-3xl">
             <div className="glide__track" data-glide-el="track">
                 <ul className="glide__slides">
                     {products.map((product, i) => (
@@ -65,7 +66,8 @@ const ProductsOffered = () => {
                 </button>
             </div>
         </div>
+        </div>
     );
 };
 
-export default ProductsOffered;
+export default ProductCarousel;

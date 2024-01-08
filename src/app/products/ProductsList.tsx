@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { products } from "../utils/consts";
+import { products } from "../../utils/consts";
 
 export default function ProductsList() {
     return (

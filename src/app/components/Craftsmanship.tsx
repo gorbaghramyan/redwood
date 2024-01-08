@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { craft_steps, craft_steps_short } from "../utils/consts";
+import { craft_steps, craft_steps_short } from "../../utils/consts";
 
 interface IProps {
     allStory?: boolean;
@@ -22,10 +22,14 @@ const Craftsmanship: React.FC<IProps> = ({ allStory }) => {
                             src={step.image}
                             alt={step.alt}
                             width={500}
-                            height={400}
+                            height={500}
                             layout="responsive"
                             objectFit="contain"
                             className="rounded-lg shadow-lg"
+                            style={{
+                                maxHeight: "500px",
+                                objectFit: "cover",
+                            }}
                         />
                     </div>
                     <div className="flex-1 flex items-center">

@@ -1,11 +1,12 @@
 import Image from "next/image";
-import tocco_table from "../img/san_francisco.jpg";
+import tocco_table from "../../img/san_francisco.jpg";
+import styles from "./RedwoodBeauty.module.css";
 
 export default function RedwoodBeauty() {
     return (
-        <div className="redwood_beauty">
+        <div className={styles.redwood_beauty}>
             <div className="text-lg">
-                <h2 className="text-xl font-semibold text-center">
+                <h2 className="text-3xl font-semibold text-center">
                     The Essence of Redwood: Elegance Meets Endurance
                 </h2>
                 <p>
