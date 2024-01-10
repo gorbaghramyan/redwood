@@ -1,5 +1,5 @@
 import Image from "next/image";
-import tocco_table from "../../img/san_francisco.jpg";
+import tocco_table from "../../img/san_francisco.webp";
 import styles from "./RedwoodBeauty.module.css";
 
 export default function RedwoodBeauty() {
