@@ -1,32 +1,26 @@
-"use client";
-import styles from './Hero.module.css';
+import styles from "./Hero.module.css";
 import Image from "next/image";
-import hero_back from "../../img/layer-1.webp";
 import layer6 from "../../img/layer-6.png";
-import useParallaxEffect from '@/hooks/useParallaxEffect';
+import BackgroundLayer from "./BackgroundLayer";
+import Link from "next/link";
+// import Wave from "../Wave";
 
 export default function Hero() {
-    useParallaxEffect();
-
     return (
         <section className={styles.hero}>
             <div className={styles.layers}>
                 <div className={styles.layers__container}>
-                    <div className={`${styles.layers__item} ${styles.layer1}`}>
-                        <Image
-                            src={hero_back.src}
-                            alt="Redwood forest"
-                            layout="fill"
-                            objectFit="cover"
-                        />
-                    </div>
+                    <BackgroundLayer />
+
                     <div className={`${styles.layers__item} ${styles.layer3}`}>
                         <div className={styles.heroContent}>
                             <h1>Redwood Furniture</h1>
                             <p className={styles.heroContent__p}>
-                                Furniture that lasts a lifetime
+                                Furniture that lasts a lifetime and beyond
                             </p>
-                            <button className={styles.buttonStart}>Explore Collection</button>
+                            <button className={styles.buttonStart}>
+                                <Link href="/products">Explore Collection</Link>
+                            </button>
                         </div>
                     </div>
                     <div className={`${styles.layers__item} ${styles.layer6}`}>
@@ -39,6 +33,7 @@ export default function Hero() {
                     </div>
                 </div>
             </div>
+            {/* <Wave /> */}
         </section>
     );
 }

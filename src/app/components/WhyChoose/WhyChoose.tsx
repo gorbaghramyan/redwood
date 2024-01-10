@@ -13,7 +13,7 @@ export default function WhyChoose() {
                 height={350}
             />
             <div className={styles.why_choose_wrap}>
-                <h2 className="text-xl font-semibold">
+                <h2 className="text-3xl font-semibold">
                     Why Choose Redwood Furniture?
                 </h2>
                 <ul className="list-disc pl-5 text-lg">

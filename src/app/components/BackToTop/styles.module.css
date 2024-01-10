@@ -1,0 +1,14 @@
+.backToTopButton {
+    background-color: #4b1d14 !important;
+    color: white;
+    box-shadow: 0 0 0 2px #ffffffe0, 0 0 0 1px #4b1d1498 !important;
+}
+
+.backToTopButton:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #ffffff7a, 0 0 0 1px #4b1d14;
+}
+
+.backToTopButton:active {
+    background-color: #4b1d14;
+}

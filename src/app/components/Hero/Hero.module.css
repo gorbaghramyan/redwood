@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+
 .hero {
   margin-top: 120px;
   transform: rotateX(var(--move-x)) rotateY(var(--move-y));
   transition: transform 1s;
   background-color: black;
+  background-image: linear-gradient(rgba(139, 0, 0, 0.75), rgba(139, 0, 0, 1) 40%, rgba(139, 0, 0, 0.75));
 }
 
 .layers {
@@ -12,7 +15,8 @@
 
 .layers__container {
   height: 70vh;
-  min-height: 500px;
+  max-height: 500px;
+  min-height: 434px;
   transform-style: preserve-3d;
   transform: rotateX(var(--move-y)) rotateY(var(--move-x));
   will-change: transform;
@@ -29,13 +33,16 @@
   justify-content: center;
 }
 
-.heroContent h1, .kamerik {
+.kamerik {
   font-family: "kamerik-3d";
 }
 
 .heroContent h1 {
   text-shadow: 1px 1px 2px black, 0 0 25px #662a19, 0 0 5px darkblue;
-  letter-spacing: calc(var(--index) * -.1);
+  font-size: 73px;
+  word-spacing: 35px;
+  font-family: "kamerik-3d";
+
 }
 
 .layer1 {
@@ -52,7 +59,7 @@
 }
 
 .heroContent {
-  font-size: calc(var(--index) * 2.9);
+  font-size: 82px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: calc(var(--index) * .05);
@@ -61,6 +68,14 @@
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+  font-family: "Caveat";
+}
+
+.buttonStart:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  color: var(--text-light);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 .heroContent span {
@@ -71,13 +86,8 @@
   text-transform: none;
   font-family: merriweather-italic-3d;
   letter-spacing: normal;
-  font-size: calc(var(--index) * 1.1);
-  line-height: 3;
-}
-
-.heroContent__p span {
-  display: block;
-  font-size: calc(var(--index) * 1.1);
+  font-size: 32px;
   line-height: 1.3;
   text-shadow: 1px 1px 2px black, 0 0 25px #662a19, 0 0 5px darkblue;
+  word-spacing: 5px;
 }
