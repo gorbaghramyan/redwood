@@ -12,9 +12,11 @@ export default function ViewCollection() {
                     Discover the perfect blend of luxury and nature with our
                     exclusive redwood collections.
                 </p>
-                <button className="mt-6 px-8 py-3 font-bold rounded-full bg-[#713e2a] text-white hover:bg-opacity-90">
-                    <Link href="/products">View Our Collection</Link>
-                </button>
+                <Link href="/products">
+                    <button className="mt-6 px-8 py-3 font-bold rounded-full bg-[#713e2a] text-white hover:bg-opacity-90">
+                        View Our Collection
+                    </button>
+                </Link>
             </div>
         </div>
     );

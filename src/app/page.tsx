@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Intro from "./components/Intro";
 import Contact from "./components/Contact/Contact";
-import Hero from "./components/Hero/Hero";
+import Hero from "./components/Hero";
 import CraftsmanshipIntro from "./components/CraftsmanshipIntro";
 import ProductCarousel from "./components/ProductCarousel/ProductCarousel";
 import WhyChoose from "./components/WhyChoose/WhyChoose";
@@ -23,16 +23,16 @@ export default function Home() {
             </Head>
             <main>
                 <Hero />
-                
+
                 <Intro />
 
                 <ProductCarousel />
 
                 <WhyChoose />
 
-                <ViewCollection />
-
                 <RedwoodBeauty />
+
+                <ViewCollection />
 
                 <CraftsmanshipIntro />
 

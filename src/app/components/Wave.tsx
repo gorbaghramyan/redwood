@@ -3,7 +3,7 @@
 const waveStyles: React.CSSProperties = {
     position: "relative",
     width: "100%",
-    height: "15vh",
+    height: "200px",
     marginBottom: "-7px",
     minHeight: "100px",
     maxHeight: "150px",

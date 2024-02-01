@@ -3,8 +3,6 @@ import hero_back from "../../img/layer-1.webp";
 import styles from "./Hero.module.css";
 
 const BackgroundLayer = () => {
-    // useParallaxEffect();
-
     return (
         <div className={`${styles.layers__item} ${styles.layer1}`}>
             <Image
